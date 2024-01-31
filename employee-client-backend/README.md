@@ -1,12 +1,10 @@
 # Description
 This is the backend code for the employee monitor client
 
-**This code is incomplete and has a bug in routing that i couldn't fix due to the time restraint which subsequently affected the whole app**
-
 
 # Files
 
-These are the files and their **intended** purpose.
+These are the files and their intended purpose.
 
 ## manage.py
 
@@ -28,12 +26,7 @@ initializes the function create_app() which creates app, imports the database co
 
 ## config.py
 
-Configures for mySQL database using SQLAlchemy
-
-## employees/
-
-This directory contains our model and controller
-
+Configures for mySQL database using SQLAlchemy and sets secret_key and some session options required for flask login
 
 ## Employee.py
 
