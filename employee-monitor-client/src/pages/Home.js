@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
 import EmployeeHome from '../components/EmployeeHome';
 import AdminHome from '../components/AdminHome';
 import Banner from '../components/Banner';
@@ -33,22 +32,22 @@ const Home = () => {
     fetchCurrentUser();
   }, []);
 
+  // Define your styles here
+  const containerStyle = {
+    boxSizing: 'border-box',
+    paddingTop: '8vh'
+    // Add more styles as needed
+  };
+
   return (
-    <div>
+    <div style={containerStyle} className="login-container">
       <Banner user={user} />
-  
-      {user && (
-        <Routes>
-          {user.isAdmin === 1 ? (
-            <Route path="/" element={<AdminHome />} />
-          ) : (
-            <Route path="/" element={<EmployeeHome />} />
-          )}
-        </Routes>
-      )}
+
+      {user && user.isAdmin === 1 && <AdminHome />}
+
+      {user && user.isAdmin === 0 && <EmployeeHome />}
     </div>
   );
-  
 };
 
 export default Home;

@@ -50,9 +50,9 @@ header {
 .banner-content {
     color: #fff;
     text-align: center;
-    margin-top: 0.5vh;
+
     display: flex;
-    margin-left: 30%;
+    margin-left: 20vw;
     justify-content: space-between;
 
 }
@@ -60,7 +60,21 @@ header {
 #logout-container {
     display: flex;
     width: auto;
-    margin-left: 40vw;
+    margin-left: 20vw;
+}
+
+@media (max-width: 450px) {
+
+    .banner-content{
+        margin-left: 0.25vw;
+        margin-top: 1.5vh;
+
+    }
+
+    #logout-container {
+
+        margin-left: 0.4vw;
+    }
 }
 
 #logout-container button {
@@ -74,7 +88,6 @@ header {
 
 @media (max-height: 800px) {
 
-
     #logout-container button {
         font-size: 2vh; /* Adjust the font size for smaller screens */
     }
@@ -85,14 +98,14 @@ header {
 }
 
 .banner p {
-    font-size: 3vh; /* Adjust the font size as needed */
+    font-size: 3vw; /* Adjust the font size as needed */
     font-weight: bold;
     text-align: center;
     color: #f39c12; /* Adjust the text color as needed */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a text shadow for depth */
     white-space: nowrap; /* Prevent line breaks */
 }
-@media (max-width: 800px) {
+@media (max-width: 450px) {
     .banner p {
         font-size: 3.5vw; /* Use viewport height when the window height is less than or equal to 800px */
     }

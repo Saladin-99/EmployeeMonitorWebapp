@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./employee-client-backend"
+    ]
+}

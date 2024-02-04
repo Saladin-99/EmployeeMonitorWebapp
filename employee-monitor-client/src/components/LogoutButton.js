@@ -15,7 +15,6 @@ const LogoutButton = () => {
 
       if (response.ok) {
         navigate("/");
-         // Use navigate function from useNavigate hook
         console.log("Logout successful");
       } else {
         console.error("Logout failed");
