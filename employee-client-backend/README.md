@@ -39,4 +39,4 @@ to_dict which retrieves the employee
 
 
 ## EmployeeController.py
-This is the controller for employee and has all the endpoints(This is where the mistake/ incompleteness is)
+This is the controller for employee and it handles the the endpoints
